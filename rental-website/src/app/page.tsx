@@ -1,11 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { Search, Star, Users, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { Badge } from '@/components/ui/Badge';
 import ItemCard from '@/components/ItemCard';
 import { categories, items } from '@/data/mockData';
 

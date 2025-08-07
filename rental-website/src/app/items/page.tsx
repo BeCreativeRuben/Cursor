@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Search, Filter } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import ItemCard from '@/components/ItemCard';
@@ -97,15 +97,15 @@ export default function AllItemsPage() {
             <div className="mt-4 flex items-center gap-3">
               <span className="text-sm text-gray-600">Active filters:</span>
               {searchQuery && (
-                <Badge variant="outline" className="flex items-center gap-1">
-                  Search: "{searchQuery}"
-                  <button
-                    onClick={() => setSearchQuery('')}
-                    className="ml-1 text-gray-400 hover:text-gray-600"
-                  >
-                    ×
-                  </button>
-                </Badge>
+                                 <Badge variant="outline" className="flex items-center gap-1">
+                   Search: &quot;{searchQuery}&quot;
+                   <button
+                     onClick={() => setSearchQuery('')}
+                     className="ml-1 text-gray-400 hover:text-gray-600"
+                   >
+                     ×
+                   </button>
+                 </Badge>
               )}
               {selectedCategory && (
                 <Badge variant="outline" className="flex items-center gap-1">

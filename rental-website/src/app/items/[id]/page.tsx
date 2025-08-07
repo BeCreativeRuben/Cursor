@@ -3,14 +3,13 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { 
   Calendar, 
   Users, 
   Ruler, 
   Weight, 
   Check, 
-  ArrowLeft, 
   ChevronLeft, 
   ChevronRight,
   Star,
@@ -20,16 +19,11 @@ import {
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { items } from '@/data/mockData';
-import { Item } from '@/types';
 
-interface ItemPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ItemPage({ params }: ItemPageProps) {
-  const item = items.find(i => i.id === params.id);
+export default function ItemPage() {
+  const params = useParams();
+  const id = params.id as string;
+  const item = items.find(i => i.id === id);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
 
   if (!item) {

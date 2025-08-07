@@ -3,32 +3,25 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound, useRouter } from 'next/navigation';
+import { notFound, useRouter, useParams } from 'next/navigation';
 import { 
   Calendar,
   Minus,
   Plus,
-  Calculator,
   User,
-  Mail,
-  Phone,
   ArrowLeft,
   AlertCircle
 } from 'lucide-react';
-import { format, addDays, differenceInDays } from 'date-fns';
+import { format, differenceInDays } from 'date-fns';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { items } from '@/data/mockData';
 
-interface ReservationPageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ReservationPage({ params }: ReservationPageProps) {
+export default function ReservationPage() {
   const router = useRouter();
-  const item = items.find(i => i.id === params.id);
+  const params = useParams();
+  const id = params.id as string;
+  const item = items.find(i => i.id === id);
   
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');

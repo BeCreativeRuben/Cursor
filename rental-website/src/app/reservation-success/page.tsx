@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle, Calendar, Mail, Phone } from 'lucide-react';
+import { CheckCircle, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
 export default function ReservationSuccessPage() {
@@ -17,7 +17,7 @@ export default function ReservationSuccessPage() {
             Reservation Submitted Successfully!
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-            Thank you for your reservation. We've received your request and will contact you shortly to confirm the details.
+                         Thank you for your reservation. We&apos;ve received your request and will contact you shortly to confirm the details.
           </p>
 
           {/* What's Next */}
@@ -30,7 +30,7 @@ export default function ReservationSuccessPage() {
                 </div>
                 <div>
                   <p className="text-blue-800 font-medium">Confirmation Email</p>
-                  <p className="text-blue-700 text-sm">You'll receive an email confirmation within 15 minutes with your reservation details.</p>
+                                     <p className="text-blue-700 text-sm">You&apos;ll receive an email confirmation within 15 minutes with your reservation details.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -48,7 +48,7 @@ export default function ReservationSuccessPage() {
                 </div>
                 <div>
                   <p className="text-blue-800 font-medium">Delivery & Setup</p>
-                  <p className="text-blue-700 text-sm">We'll deliver and set up your equipment at the scheduled time.</p>
+                                     <p className="text-blue-700 text-sm">We&apos;ll deliver and set up your equipment at the scheduled time.</p>
                 </div>
               </div>
             </div>

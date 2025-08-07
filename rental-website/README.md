@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏢 RentEase - Premium Event Rentals Website
 
-## Getting Started
+A comprehensive rental website built with Next.js 15, TypeScript, and Tailwind CSS for renting event equipment like WC-trailers, refrigerators, tents, furniture, and catering equipment.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🏠 Homepage
+- Hero section with search functionality
+- Category-based browsing with visual icons
+- Featured items showcase
+- Service highlights and trust indicators
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📦 Item Management
+- Detailed item pages with interactive photo galleries
+- Comprehensive specifications and features
+- Real-time pricing and availability information
+- Responsive design for all devices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🛒 Reservation System
+- Complete booking form with date selection
+- Quantity management with availability checking
+- Customer information collection
+- Real-time price calculation
+- Professional confirmation flow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔍 Advanced Search & Filtering
+- Full-text search functionality
+- Category-based filtering
+- Price sorting options
+- Clean results display with active filter indicators
 
-## Learn More
+## 🎯 Rental Categories
 
-To learn more about Next.js, take a look at the following resources:
+- **🚿 Sanitation**: Luxury WC Trailers with full amenities
+- **❄️ Cooling**: Industrial refrigerators and cooling elements  
+- **⛺ Tents**: Large party tents for events
+- **🪑 Furniture**: Tables, elegant Chiavari chairs
+- **🍽️ Catering**: Professional dinnerware and equipment
+- **💡 Lighting**: Event lighting and power solutions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Date Handling**: date-fns
+- **Build Tool**: Next.js built-in bundler
 
-## Deploy on Vercel
+## 🚀 Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for production**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+## 📱 Key Pages
+
+- `/` - Homepage with search and featured items
+- `/items` - All items with advanced filtering
+- `/items/[id]` - Detailed item pages with photo gallery
+- `/items/[id]/reserve` - Reservation system
+- `/reservation-success` - Confirmation page
+
+## 🎨 Design Features
+
+- **Clean Layout**: Professional, uncluttered design
+- **Visual Categories**: Easy-to-understand icons and organization
+- **Photo Galleries**: Support for multiple detailed photos per item
+- **Modern Forms**: Intuitive reservation and contact forms
+- **Trust Elements**: Professional features, guarantees, and contact info
+- **Mobile-First**: Responsive design that works perfectly on all devices
+
+## 📦 Sample Items Included
+
+The website comes with sample rental items including:
+
+- Luxury WC Trailer with climate control
+- Industrial 600L Refrigerator
+- 6x12m Party Tent
+- Round tables and Chiavari chairs
+- Porcelain dinnerware sets
+- And more...
+
+## 🔧 Customization
+
+### Adding New Items
+Update the `src/data/mockData.ts` file to add new rental items with:
+- Item details and pricing
+- Category assignment
+- Photo URLs
+- Specifications and features
+- Availability status
+
+### Styling
+The project uses Tailwind CSS. Customize colors, fonts, and spacing in:
+- `tailwind.config.js` - Theme configuration
+- `src/app/globals.css` - Global styles
+- Individual components - Component-specific styles
+
+### Business Information
+Update contact information and business details in:
+- `src/components/Header.tsx` - Header contact info
+- `src/components/Footer.tsx` - Footer details
+- `src/data/mockData.ts` - Business-specific content
+
+## 🚀 Production Ready
+
+This website is production-ready and includes:
+- ✅ SEO-optimized structure
+- ✅ Performance optimizations
+- ✅ Mobile responsiveness
+- ✅ Type safety with TypeScript
+- ✅ Professional UI/UX
+- ✅ Form validation
+- ✅ Error handling
+
+## 📄 License
+
+This project is available for commercial use. Perfect for rental businesses looking for a professional online presence.
+
+---
+
+Built with ❤️ for premium event rental businesses.
